@@ -1,4 +1,4 @@
-﻿// GameController.cs
+
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -86,13 +86,13 @@ namespace PlatformerGame
 
             g.TranslateTransform(-cameraX, -cameraY);
 
-            // Отрисовка пуль (оставляем как было)
+
             foreach (var bullet in _model.Bullets)
             {
                 g.FillRectangle(Brushes.Black, bullet.Bounds);
             }
 
-            // Отрисовка монстров с изображением
+
             foreach (var monster in _model.Monsters)
             {
                 if (_view.MonsterImage != null)
@@ -101,11 +101,11 @@ namespace PlatformerGame
                 }
                 else
                 {
-                    g.FillRectangle(Brushes.Purple, monster.Bounds); // Fallback
+                    g.FillRectangle(Brushes.Purple, monster.Bounds);
                 }
             }
 
-            // Отрисовка стен и платформ (оставляем как было)
+
             foreach (var wall in _model.Walls)
             {
                 g.FillRectangle(Brushes.DarkGray, wall);
@@ -116,7 +116,7 @@ namespace PlatformerGame
                 g.FillRectangle(Brushes.Green, platform);
             }
 
-            // Отрисовка шипов (оставляем как было)
+
             foreach (var spike in _model.Spikes)
             {
                 Point[] points = {
@@ -143,12 +143,10 @@ namespace PlatformerGame
             }
             else
             {
-                // Fallback - рисуем прямоугольник
                 Brush playerBrush = _model.Player.IsDead ? Brushes.Gray : Brushes.Blue;
                 g.FillRectangle(playerBrush, _model.Player.Bounds);
             }
 
-            // Отрисовка уровня (оставляем как было)
             var font = new Font("Arial", 24);
             g.ResetTransform();
             g.DrawString($"Level: {_model.CurrentLevel}", font, Brushes.Black, 20, 20);
@@ -161,7 +159,6 @@ namespace PlatformerGame
                 }
                 else
                 {
-                    // Fallback - рисуем розовый прямоугольник с короной
                     g.FillRectangle(Brushes.Pink, princess.Bounds);
 
                     Point[] crownPoints = {
