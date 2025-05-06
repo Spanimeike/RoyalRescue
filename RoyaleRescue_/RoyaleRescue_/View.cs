@@ -16,10 +16,10 @@ namespace PlatformerGame
         private Timer _gameTimer;
         private bool _isFullscreen;
         private Image _playerImage;
-        private Image _playerImageLeft; // Новое изображение для ходьбы влево
+        private Image _playerImageLeft;
         private Image _monsterImage;
         public Image PlayerImage => _playerImage;
-        public Image PlayerImageLeft => _playerImageLeft; // Новое свойство
+        public Image PlayerImageLeft => _playerImageLeft;
         public Image MonsterImage => _monsterImage;
 
         public GameView(GameController controller)
@@ -31,9 +31,9 @@ namespace PlatformerGame
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
 
-            // Загрузка изображений
-            _playerImage = LoadImageFromResources("player"); // Обычное изображение (вправо)
-            _playerImageLeft = LoadImageFromResources("player1"); // Изображение для ходьбы влево
+
+            _playerImage = LoadImageFromResources("player");
+            _playerImageLeft = LoadImageFromResources("player1");
             _monsterImage = LoadImageFromResources("monster");
             _princessImage = LoadImageFromResources("princess");
             _levelDecorationImage = LoadImageFromResources("123");
@@ -89,7 +89,6 @@ namespace PlatformerGame
             base.OnPaint(e);
             _controller.Draw(e.Graphics);
 
-            // Добавьте отрисовку изображения на 3 уровне
             if (_controller.GetModel().CurrentLevel == 3 && _levelDecorationImage != null)
             {
                 e.Graphics.DrawImage(_levelDecorationImage, 2200, 900);
