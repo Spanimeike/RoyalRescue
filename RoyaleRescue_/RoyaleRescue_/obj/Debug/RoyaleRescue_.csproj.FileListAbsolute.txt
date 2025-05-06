@@ -1,0 +1,10 @@
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\bin\Debug\RoyaleRescue_.exe.config
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\bin\Debug\RoyaleRescue_.exe
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\bin\Debug\RoyaleRescue_.pdb
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.csproj.AssemblyReference.cache
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.Form1.resources
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.Properties.Resources.resources
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.csproj.GenerateResource.cache
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.exe
+C:\Users\Пользователь\source\repos\RoyaleRescue_\RoyaleRescue_\obj\Debug\RoyaleRescue_.pdb
