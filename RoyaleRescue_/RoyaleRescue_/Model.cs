@@ -170,7 +170,6 @@ namespace PlatformerGame
 
                 Princesses.Add(new Princess { Position = new Point(2200, GameArea.Height - 400) });
 
-                // Много шипов и ловушек
                 Spikes.Add(new Rectangle(430, GameArea.Height - 320, 50, spikeHeight));
                 Spikes.Add(new Rectangle(1400, GameArea.Height - 920, 100, spikeHeight));
                 Spikes.Add(new Rectangle(1750, GameArea.Height - 1070, 100, spikeHeight));
